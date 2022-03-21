@@ -27,20 +27,31 @@ export const Navbar = () => {
 
       <div className="flex flex-col px-5 md:px-20 items-center md:flex-row w-full max-w-[1440px] justify-between">
 
-      <Link href="/" passHref>
-        
-        <a>
-          <Image
-            className='cursor-pointer'
-            src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/104.png"}
-            alt = "pokeimage.jpg"
-            width={90}
-            height={90}
-          />
-        </a>
+      <div className="flex items-center">
 
-      </Link>
+        <Link href="/" passHref>
+          
+          <a>
+            <Image
+              className='cursor-pointer'
+              src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/104.png"}
+              alt = "pokeimage.jpg"
+              width={90}
+              height={90}
+            />
+          </a>
+
+        </Link>
+
+        <Link href="/" passHref>
+          <a>
+            <h1 className="first-letter:text-4xl text-2xl">PokeApp</h1>
+          </a>
+        </Link>
         
+
+      </div>        
+
         <div className="flex max-w-max items-center flex-wrap gap-5">
 
           {
